@@ -4,4 +4,4 @@ from django.views import View
 
 class formview(View):
     def get(self,request):
-        return render(request, 'hoteltp/index-two.html')
+        return render(request, 'hoteltp/gallery.html')
