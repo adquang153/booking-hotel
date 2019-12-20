@@ -3,7 +3,7 @@
 
 {% block body %}
     <body id="home_two">
-	{% include 'hoteltp/navbar.html' %}
+	{% include 'hoteltp/navbar.html' %}	
         <!-- start main slider -->
         <div class="main_slider_area">
             <div class="container-fluid">
@@ -11,7 +11,7 @@
                     <div class="main_slider" id="slider_rev">
                         <!-- special offer start -->
                         <div class="special_offer_main">
-                            <img src="img/special-offer-yellow-main.png" alt="">
+                            <img src="{% static 'hoteltp/img/special-offer-yellow-main.png'%}" alt="">
                         </div>
                         <!-- end offer start -->
                         
@@ -20,7 +20,7 @@
                                 <ul>                     
                                     
                             <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
-                                <img src="img/rev-slider/slider-one.jpg" alt="slide" >
+                                <img src="{%static 'hoteltp/img/rev-slider/slider-one.jpg'%}" alt="slide" >
                                 <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
                                     style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
                                     Book Your Summer Holidays
@@ -35,7 +35,7 @@
                                 </div>
                             </li>							
                             <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
-                                <img src="img/rev-slider/slider-one.jpg" alt="slide" >
+                                <img src="{%static 'hoteltp/img/rev-slider/slider-one.jpg'%}" alt="slide" >
                                 <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
                                     style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
                                     One of the Best Booking Template
@@ -130,28 +130,28 @@
                 <div class="another_facitilies clearfix padding-bottom-100">
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="single_facities">
-                            <a href="#"><img src="img/home-facilities-icon-eleven.png" alt=""></a>
+                            <a href="#"><img src="{%static 'hoteltp/img/home-facilities-icon-eleven.png'%}" alt=""></a>
                             <h6>Restaurant</h6>
                             <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
                         </div>                        
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="single_facities">
-                            <a href="#"><img src="img/home-facilities-icon-seven.png" alt=""></a>
+                            <a href="#"><img src="{%static 'hoteltp/img/home-facilities-icon-seven.png'%}" alt=""></a>
                             <h6>Sports Club</h6>
                             <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
                         </div> 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="single_facities">
-                            <a href="#"><img src="img/home-facilities-icon-eight.png" alt=""></a>
+                            <a href="#"><img src="{%static 'hoteltp/img/home-facilities-icon-eight.png'%}" alt=""></a>
                             <h6>Pick up</h6>
                             <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
                         </div> 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <div class="single_facities">
-                            <a href="#"><img src="img/home-facilities-icon-nine.png" alt=""></a>
+                            <a href="#"><img src="{%static 'hoteltp/img/home-facilities-icon-nine.png'%}" alt=""></a>
                             <h6>BAR</h6>
                             <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
                         </div> 
@@ -172,7 +172,7 @@
                         <div class="select_room_content clearfix">
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <div class="room_thumb">
-                                    <a href="#"><img src="img/room-thumb-one.jpg" alt=""></a>
+                                    <a href="#"><img src="{%static 'hoteltp/img/room-thumb-one.jpg'%}" alt=""></a>
                                     <div class="room_details">
                                         <div class="about_room floatleft">
                                             <div class="room_quality floatleft">
@@ -190,7 +190,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-sx-12">
                                 <div class="room_thumb small_room_thumb margin-bottom-35">
-                                    <a href="#"><img src="img/room-thumb-two.jpg" alt=""></a>
+                                    <a href="#"><img src="{%static 'hoteltp/img/room-thumb-two.jpg'%}" alt=""></a>
                                     <div class="room_details">
                                         <div class="about_room floatleft">
                                             <div class="room_quality floatleft">
@@ -206,7 +206,7 @@
                                     </div>
                                 </div>
                                 <div class="room_thumb small_room_thumb">
-                                    <a href="#"><img src="img/room-thumb-three.jpg" alt=""></a>
+                                    <a href="#"><img src="{%static 'hoteltp/img/room-thumb-three.jpg'%}" alt=""></a>
                                     <div class="room_details">
                                         <div class="about_room floatleft">
                                             <div class="room_quality floatleft">
@@ -220,11 +220,6 @@
                                             <a href="#" class="btn btn-black">Book</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12">
-                                <div class="view_all_rooms text-center  padding-bottom-90  padding-top-90">
-                                    <a href="#" class="btn btn-warning">View All Rooms</a>
                                 </div>
                             </div>
                         </div>
@@ -245,52 +240,52 @@
                         <div class="section_content">
                             <div class="showcase_slider">
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-one.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-one.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-two.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-two.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-three.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-three.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-four.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-four.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-five.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-five.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-six.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-six.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-seven.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-seven.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-one.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-one.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-two.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-two.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="img/showcase-slider-three.jpg" alt="img">
+                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-three.jpg'%}" alt="img">
                                         <i class="fa fa-search"></i>
                                     </a>
                                 </div>
@@ -317,7 +312,7 @@
                                         <div class="single_content clearfix border-bottom-whitesmoke">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 padding-left-0">
                                                 <div class="post_media">
-                                                    <a href="#"><img src="img/news-one.jpg" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/news-one.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 padding-left-0">
@@ -332,7 +327,7 @@
                                         <div class="single_content clearfix margin-top-35 border-bottom-whitesmoke">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 padding-left-0">
                                                 <div class="post_media">
-                                                    <a href="#"><img src="img/news-two.jpg" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/news-two.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 padding-left-0">
@@ -347,7 +342,7 @@
                                         <div class="single_content clearfix margin-bottom-35 margin-top-35">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 padding-left-0">
                                                 <div class="post_media">
-                                                    <a href="#"><img src="img/news-three.jpg" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/news-three.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 padding-left-0">
@@ -372,7 +367,7 @@
                             <div class="section_description">
                                 <div class="about_hotel" style="">
                                     <div class="hotel_thumb">
-                                        <img src="img/about-hotel-thumb.jpg" alt="img">
+                                        <img src="{%static 'hoteltp/img/about-hotel-thumb.jpg'%}" alt="img">
                                     </div>
                                     <div class="about_details">
                                         <p>
@@ -404,7 +399,7 @@
                                                 </div>
                                                 <div class="customer_detail clearfix">
                                                     <div class="customer_pic alignleft-20">
-                                                        <a href="#"><img src="img/customer-says-one.png" alt=""></a>
+                                                        <a href="#"><img src="{%static 'hoteltp/img/customer-says-one.png'%}" alt=""></a>
                                                     </div>
                                                     <div class="customer_identity floatleft">
                                                         <h6>John Doe</h6>
@@ -425,7 +420,7 @@
                                                 </div>
                                                 <div class="customer_detail clearfix">
                                                     <div class="customer_pic alignleft-20">
-                                                        <a href="#"><img src="img/customer-says-one.png" alt=""></a>
+                                                        <a href="#"><img src="{%static 'hoteltp/img/customer-says-one.png'%}" alt=""></a>
                                                     </div>
                                                     <div class="customer_identity floatleft">
                                                         <h6>John Doe</h6>
@@ -452,4 +447,41 @@
             </div>
         </section>
         <!-- end About Us section -->
+
+        <!-- start contact us area -->
+        <section class="contact_us_area content-left">
+            <div class="container">
+                <div class="contact_us clearfix">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="call clearfix">
+                            <h6>Call Us</h6>
+                            <p>123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="email_us clearfix">
+                            <h6>Email us</h6>
+                            <p>info@hotelbooking.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="news_letter clearfix">
+                            <input type="text" placeholder="Enter ID  for News Letter">
+                            <a href="#" class="btn btn-blue">go</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="social_icons clearfix">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact us area -->
 {% endblock %}

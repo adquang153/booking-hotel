@@ -6,7 +6,7 @@
 	{% include 'hoteltp/navbar.html' %}
 
         <!-- start breadcrumb -->
-        <section class="breadcrumb_main_area margin-bottom-80">
+        <section class="breadcrumb_main_area margin-bottom-80" style="background: url({% static 'hoteltp/img/accomodation-breadcrumb-one.jpg' %}) no-repeat center center / cover #000000;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="breadcrumb_main nice_title">
@@ -15,7 +15,7 @@
                         <div class="special_offer_main">
                             <div class="container">
                                 <div class="special_offer_sub">
-                                    <img src="img/special-offer-yellow-main.png" alt="imf">
+                                    <img src="{%static 'hoteltp/img/special-offer-yellow-main.png'%}" alt="imf">
                                 </div>
                             </div>
                         </div>         
@@ -43,29 +43,30 @@
                                                 <div class="clearfix" style="">
                                                     <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
                                                     <!-- <ul id="vertical" class="gallery list-unstyled"> -->
-                                                        <li data-thumb="img/lightslider-img/cS-52.jpg">
-                                                            <img alt="slider" src="img/lightslider-img/cS-52.jpg" />
+                                                    	<!-- {%static 'hoteltp/'%} -->
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-52.jpg'%}">
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-52.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-51.jpg">
-                                                            <img alt="slider" src="img/lightslider-img/cS-51.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-51.jpg'%}">
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-51.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-50.jpg"> 
-                                                            <img alt="slider" src="img/lightslider-img/cS-50.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-50.jpg'%}"> 
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-50.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-49.jpg"> 
-                                                            <img alt="slider" src="img/lightslider-img/cS-49.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-49.jpg'%}"> 
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-49.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-48.jpg"> 
-                                                            <img alt="slider" src="img/lightslider-img/cS-48.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-48.jpg'%}"> 
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-48.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-47.jpg"> 
-                                                            <img alt="slider" src="img/lightslider-img/cS-47.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-47.jpg'%}"> 
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-47.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-46.jpg"> 
-                                                            <img alt="slider" src="img/lightslider-img/cS-46.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-46.jpg'%}"> 
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-46.jpg'%}" />
                                                         </li>
-                                                        <li data-thumb="img/lightslider-img/cS-45.jpg"> 
-                                                            <img alt="slider" src="img/lightslider-img/cS-45.jpg" />
+                                                        <li data-thumb="{%static 'hoteltp/img/lightslider-img/cS-45.jpg'%}"> 
+                                                            <img alt="slider" src="{%static 'hoteltp/img/lightslider-img/cS-45.jpg'%}" />
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -81,11 +82,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 no-padding-left">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-one.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-one.png'%}" alt="">
                                                             <p>Breakfast</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-four.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-four.png'%}" alt="">
                                                             <p>Room service</p>
                                                         </li>
                                                     </ul>
@@ -93,11 +94,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-two.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-two.png'%}" alt="">
                                                             <p>Air conditioning</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-ten.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-ten.png'%}" alt="">
                                                             <p>GYM fecility</p>
                                                         </li>
                                                     </ul>
@@ -105,11 +106,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-eight.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-eight.png'%}" alt="">
                                                             <p>Free Parking</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-five.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-five.png'%}" alt="">
                                                             <p>TV LCD</p>
                                                         </li>
                                                     </ul>
@@ -117,11 +118,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-three.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-three.png'%}" alt="">
                                                             <p>Pet allowed</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-twelve.png" alt="">
+                                                            <img src="{%static 'hoteltp/img/home-facilities-icon-twelve.png'%}" alt="">
                                                             <p>Wi-fi service</p>
                                                         </li>
                                                     </ul>
@@ -153,7 +154,7 @@
                                                                 <div class="single_room_wrapper clearfix">
                                                                     <div class="room_wrapper">
                                                                         <div class="room_media">
-                                                                            <a href="#"><img src="img/room-image-ten.jpg" alt=""></a>
+                                                                            <a href="#"><img src="{%static 'hoteltp/img/room-image-ten.jpg'%}" alt=""></a>
                                                                         </div>
                                                                         <div class="room_title clearfix">
                                                                             <div class="left_room_title floatleft">
@@ -171,7 +172,7 @@
                                                                 <div class="single_room_wrapper clearfix">
                                                                     <div class="room_wrapper">
                                                                         <div class="room_media">
-                                                                            <a href="#"><img src="img/room-image-twelve.jpg" alt=""></a>
+                                                                            <a href="#"><img src="{%static 'hoteltp/img/room-image-twelve.jpg'%}" alt=""></a>
                                                                         </div>
                                                                         <div class="room_title clearfix">
                                                                             <div class="left_room_title floatleft">
@@ -189,7 +190,7 @@
                                                                 <div class="single_room_wrapper clearfix">
                                                                     <div class="room_wrapper">
                                                                         <div class="room_media">
-                                                                            <a href="#"><img src="img/room-image-thirteen.jpg" alt=""></a>
+                                                                            <a href="#"><img src="{%static 'hoteltp/img/room-image-thirteen.jpg'%}" alt=""></a>
                                                                         </div>
                                                                         <div class="room_title clearfix">
                                                                             <div class="left_room_title floatleft">
@@ -312,7 +313,7 @@
                                                     </div>
                                                     <div class="customer_detail clearfix">
                                                         <div class="customer_pic alignright-20">
-                                                            <a href="#"><img src="img/customer-says-one.png" alt=""></a>
+                                                            <a href="#"><img src="{%static 'hoteltp/img/customer-says-one.png'%}" alt=""></a>
                                                         </div>
                                                         <div class="customer_identity floatright">
                                                             <h6>John Doe</h6>
@@ -333,7 +334,7 @@
                                                     </div>
                                                     <div class="customer_detail clearfix">
                                                         <div class="customer_pic alignright-20">
-                                                            <a href="#"><img src="img/customer-says-one.png" alt=""></a>
+                                                            <a href="#"><img src="{%static 'hoteltp/img/customer-says-one.png'%}" alt=""></a>
                                                         </div>
                                                         <div class="customer_identity floatright">
                                                             <h6>John Doe</h6>

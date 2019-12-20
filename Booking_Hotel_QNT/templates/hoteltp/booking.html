@@ -5,7 +5,7 @@
     <body id="booking_page">
 	{% include 'hoteltp/navbar.html' %}
         <!-- start breadcrumb -->
-        <section class="breadcrumb_main_area margin-bottom-80">
+        <section class="breadcrumb_main_area margin-bottom-80" style="background: url({% static 'hoteltp/img/gallery-breadcrumb.jpg' %}) no-repeat center center / cover #000000;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="breadcrumb_main nice_title">
@@ -14,7 +14,7 @@
                         <div class="special_offer_main">
                             <div class="container">
                                 <div class="special_offer_sub">
-                                    <img src="img/special-offer-yellow-main.png" alt="imf">
+                                    <img src="{% static 'hoteltp/img/special-offer-yellow-main.png'%}" alt="imf">
                                 </div>
                             </div>
                         </div>         
@@ -53,7 +53,7 @@
                                 <div class="facilities_name clearfix margin-bottom-150 margin-top-70">
                                     <div class="row">
                                         <div class="col-lg-3 col-md-3 col-sm-5">
-                                            <img src="img/booking-step-one.jpg" alt="">
+                                            <img src="{% static 'hoteltp/img/booking-step-one.jpg'%}" alt="">
                                         </div>
                                         <div class="col-lg-9 col-md-9 col-sm-7">
                                             <div class="row">
@@ -74,11 +74,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 no-padding-left">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-one.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-one.png'%}" alt="">
                                                             <p>Breakfast</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-four.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-four.png'%}" alt="">
                                                             <p>Room service</p>
                                                         </li>
                                                     </ul>
@@ -86,11 +86,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-two.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-two.png'%}" alt="">
                                                             <p>Air conditioning</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-ten.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-ten.png'%}" alt="">
                                                             <p>GYM fecility</p>
                                                         </li>
                                                     </ul>
@@ -98,11 +98,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-eight.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-eight.png'%}" alt="">
                                                             <p>Free Parking</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-five.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-five.png'%}" alt="">
                                                             <p>TV LCD</p>
                                                         </li>
                                                     </ul>
@@ -110,11 +110,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
-                                                            <img src="img/home-facilities-icon-three.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-three.png'%}" alt="">
                                                             <p>Pet allowed</p>
                                                         </li>
                                                         <li>
-                                                            <img src="img/home-facilities-icon-twelve.png" alt="">
+                                                            <img src="{% static 'hoteltp/img/home-facilities-icon-twelve.png'%}" alt="">
                                                             <p>Wi-fi service</p>
                                                         </li>
                                                     </ul>
@@ -380,11 +380,11 @@
                                                     <div class="payment_system clearfix">
                                                         <div class="left_payment_system clearfix floatleft">
                                                             <ul class="clearul">
-                                                                <li><a href="#"><img src="img/american-express.png" alt=""></a></li>
-                                                                <li><a href="#"><img src="img/discover.png" alt=""></a></li>
-                                                                <li><a href="#"><img src="img/paypal.png" alt=""></a></li>
-                                                                <li><a href="#"><img src="img/visa.png" alt=""></a></li>
-                                                                <li><a href="#"><img src="img/maestro.png" alt=""></a></li>
+                                                                <li><a href="#"><img src="{% static 'hoteltp/img/american-express.png'%}" alt=""></a></li>
+                                                                <li><a href="#"><img src="{% static 'hoteltp/img/discover.png'%}" alt=""></a></li>
+                                                                <li><a href="#"><img src="{% static 'hoteltp/img/paypal.png'%}" alt=""></a></li>
+                                                                <li><a href="#"><img src="{% static 'hoteltp/img/visa.png'%}" alt=""></a></li>
+                                                                <li><a href="#"><img src="{% static 'hoteltp/img/maestro.png'%}" alt=""></a></li>
                                                             </ul>
                                                         </div>
                                                         <div class="right_pay_now floatright">
