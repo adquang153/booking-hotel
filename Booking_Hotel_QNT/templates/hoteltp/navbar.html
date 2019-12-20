@@ -16,7 +16,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="left_header_top">
                                     <ul>
-                                        <li><a href="#"><img src="{% static 'hoteltp/img/temp-icon.png' %}" alt="temp-icon">Huế, 28*C</a></li>
+                                        <li><a href="{% url 'hotel:index' %}"><img src="{% static 'hoteltp/img/temp-icon.png' %}" alt="temp-icon">Huế, 28*C</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                                     <span class="icon-bar"></span>
                                   </button>
                                   <div class="site_logo fix">
-                                      <a id="brand" class="clearfix navbar-brand border-right-whitesmoke" href="index-2.html"><img src=" {% static 'hoteltp/img/site-logo.png' %}" alt="Trips"></a>
+                                      <a id="brand" class="clearfix navbar-brand border-right-whitesmoke" href="{% url 'hotel:index' %}"><img src=" {% static 'hoteltp/img/site-logo.png' %}" alt="Trips"></a>
                                   </div>
                                 </div>
 
@@ -66,22 +66,22 @@
                                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                                   <ul class="nav navbar-nav">
                                     <li role="presentation">
-                                        <a href="#">
+                                        <a href="{% url 'hotel:index' %}">
                                           Home
                                         </a>
                                     </li>        
-                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="{% url 'hotel:gallery' %}">Gallery</a></li>
                                     <li role="presentation" class="dropdown">
                                         <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
                                           Features
                                         </a>
                                         <ul id="menu2" class="dropdown-menu" role="menu">
-                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="about-us.html">About US</a></li>
-                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="booking.html">Booking</a></li>
-                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="404.html">404 Page</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'hotel:as' %}">About US</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'hotel:booking' %}">Booking</a></li>
+                                          <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'hotel:404' %}">404 Page</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">Blogs</a></li>
+                                    <li><a href="{% url 'hotel:blog' %}">Blogs</a></li>
                                   </ul>
                                   <div class="emergency_number">
                                       <a href="tel:1234567890"><img src="img/call-icon.png" alt="">123 456 7890</a>
