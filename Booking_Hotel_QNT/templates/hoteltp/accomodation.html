@@ -5,7 +5,7 @@
     <body id="accomodation_page">
 		{% include 'hoteltp/navbar.html' %}
         <!-- start breadcrumb -->
-        <section class="breadcrumb_main_area margin-bottom-80">
+        <section class="breadcrumb_main_area margin-bottom-80" style="background: url({% static 'hoteltp/img/accomodation-breadcrumb-one.jpg'%}) no-repeat center center / cover #000000;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="breadcrumb_main nice_title">
@@ -14,7 +14,7 @@
                         <div class="special_offer_main">
                             <div class="container">
                                 <div class="special_offer_sub">
-                                    <img src="img/special-offer-yellow-main.png" alt="imf">
+                                    <img src="{% static 'hoteltp/img/special-offer-yellow-main.png' %}" alt="imf">
                                 </div>
                             </div>
                         </div>         
@@ -37,7 +37,7 @@
                         <div class="select_room_content clearfix">
                             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <div class="room_thumb">
-                                    <a href="#"><img src="img/room-thumb-one.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'hoteltp/img/room-thumb-one.jpg' %}" alt=""></a>
                                     <div class="room_details">
                                         <div class="about_room floatleft">
                                             <div class="room_quality floatleft">
@@ -55,7 +55,7 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 col-sx-12">
                                 <div class="room_thumb small_room_thumb margin-bottom-35">
-                                    <a href="#"><img src="img/room-thumb-two.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'hoteltp/img/room-thumb-two.jpg' %}" alt=""></a>
                                     <div class="room_details">
                                         <div class="about_room floatleft">
                                             <div class="room_quality floatleft">
@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
                                 <div class="room_thumb small_room_thumb">
-                                    <a href="#"><img src="img/room-thumb-three.jpg" alt=""></a>
+                                    <a href="#"><img src="{% static 'hoteltp/img/room-thumb-three.jpg' %}" alt=""></a>
                                     <div class="room_details">
                                         <div class="about_room floatleft">
                                             <div class="room_quality floatleft">
@@ -150,16 +150,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group col-lg-2 col-md-2 col-sm-2">
-                                                <div class="input-group range_slider">
-                                                      <div data-role="rangeslider">
-                                                        <span>Price:</span>
-                                                        <label>range:</label>
-                                                        <div class="range">
-                                                            <span class="floatleft">50$</span><span class="floatright">5000$</span>
-                                                            <input class="margin-rl-5" type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-                                                        </div>
-                                                      </div>        
-                                                </div>
+                                                
                                             </div>                  
                                             <div class="col-lg-2 col-md-2 col-sm-2 clearfix">
                                                 <a class="btn btn-warning btn-md floatright">Filter</a>
@@ -178,7 +169,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-ten.jpg" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-ten.jpg' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -215,7 +206,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-nineteen.png" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-nineteen.png' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -252,7 +243,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-thirteen.jpg" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-thirteen.jpg' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -289,7 +280,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-fourteen.jpg" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-fourteen.jpg' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -326,7 +317,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-fifteen.png" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-fifteen.png' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -363,7 +354,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-twenty.png" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-twenty.png' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -400,7 +391,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-seventeen.png" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-seventeen.png' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -437,7 +428,7 @@
                                             <div class="single_room_wrapper clearfix padding-bottom-30">
                                                 <figure class="uk-overlay uk-overlay-hover">
                                                     <div class="room_media">
-                                                        <a href="#"><img src="img/room-image-eighteen.png" alt=""></a>
+                                                        <a href="#"><img src="{% static 'hoteltp/img/room-image-eighteen.png' %}" alt=""></a>
                                                     </div>
                                                     <div class="room_title border-bottom-whitesmoke clearfix">
                                                             <div class="left_room_title floatleft">
@@ -470,27 +461,6 @@
                                                 </figure>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <nav class="text-center margin-top-65 margin-bottom-75">
-                                          <ul class="pagination">
-                                            <li>
-                                              <a href="#" aria-label="Previous">
-                                                <i class="fa fa-angle-left"></i>prev
-                                              </a>
-                                            </li>
-                                            <li class="active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li>
-                                              <a href="#" aria-label="Next">next
-                                                <i class="fa fa-angle-right"></i>
-                                              </a>
-                                            </li>
-                                          </ul>
-                                        </nav>
                                     </div>
                                 </div>
                             </div>
