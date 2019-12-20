@@ -1,5 +1,5 @@
 from django.urls import path
 from .views import formview
 urlpatterns = [
-   path('', formview.as_view(),name="test"),
+   path('', formview.as_view(),name="index"),
 ]
