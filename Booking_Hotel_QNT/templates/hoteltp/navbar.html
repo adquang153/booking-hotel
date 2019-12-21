@@ -24,9 +24,14 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 floatright">
                                 <div class="right_header_top clearfix floatright">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li class="">
-                                            <a class="border-right-dark-4" href="#">Xin chào</a></li>
+                                     {% if user.is_authenticated %}
+                                        <li class="">   
+                                            <a class="border-right-dark-4" href="#">XIN CHÀO, {{user.username}}</a></li>
                                         </li>
+                                        <li class="">
+                                        <a class="border-right-dark-4" href="{% url 'hotel:logout' %}">Logout</a></li>
+                                         </li>
+                                         {% endif %}
                                     </ul>
                                 </div>
                             </div>

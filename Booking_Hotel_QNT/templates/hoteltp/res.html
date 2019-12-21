@@ -1,0 +1,17 @@
+{% extends 'hoteltp/base.html' %}
+{% load static %}
+
+{% block body %}
+{% include 'hoteltp/navbar.html' %}
+
+  <form method="post" action="" style="width:40%;margin:auto;padding: 40px 0;">
+    {% csrf_token %}
+    <div class="form-group">
+	  {{form.as_p}}
+     </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+   <a style="padding: 40px" href="{% url 'hotel:login' %}">TRỞ VỀ</a> </p>
+	
+  </form>
+{% endblock %}

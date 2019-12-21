@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.views import View
 from .forms import SignUpForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth import authenticate, login,get_user_model
+from django.contrib.auth import authenticate, login,get_user_model, logout
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
 
@@ -60,4 +60,7 @@ class resView(View):
             return render(request,'hoteltp/index.html')
         else:
             return render(request,'hoteltp/res.html')
-        
+class logoutView(View):
+    def get(self,request):
+        logout(request)
+        return redirect('hotel:login')     
