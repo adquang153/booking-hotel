@@ -1,5 +1,6 @@
 {% extends 'hoteltp/base.html' %}
 {% load static %}
+
 {% block body %}
     <body id="home_one">
         {% include 'hoteltp/navbar.html' %}
@@ -7,11 +8,10 @@
         <div class="main_slider_area">
             <div class="main_slider" id="slider_rev">
                 <!-- start hotel booking -->
-                {{un}}
                 <div class="hotel_booking_area">
                     <div class="container">
                         <div class="hotel_booking">
-							<h2 style="text-align: center;color: white; margin:0;">Welcome to Hotel QTN</h2>                               
+							<h1 style="text-align: center;color: white; margin:0; font-weight: bold;"> ✯ Welcome to QTN Hotel Hue ✯</h1>                               
                             <!-- special offer start -->
                             <div class="special_offer_main">
                                 <img src="{%static 'hoteltp/img/special-offer-main.png'%}" alt="">
@@ -28,32 +28,35 @@
                             <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
                                 <img src="{%static 'hoteltp/img/rev-slider/slider-one.jpg'%}" alt="slide" >
                                 <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
-                                    style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
-                                    A brand New Hotel
+                                    style="font-family: 'Playfair Display', serif; font-size: 60px;color: #131e2a; margin-bottom: 10px; font-style: italic; text-transform: uppercase; line-height: 40px;">
+                                    Nghỉ dưỡng phong cách
                                 </div>
                                 <div class="tp-caption large_black sfr" data-x="105" data-y="255" data-speed="1500" data-start="1400" data-easing="easeInOutBack"
-                                    style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
-                                    Beyond Ordinary
+                                    style="font-family: 'Playfair Display', serif; font-size: 35px;color: #131e2a; margin-bottom: 23px; margin-top: 10px; padding-left: 80px; line-height: 40px;">
+                                    Tận hưởng kỳ nghỉ kèm các bửa ăn chính <br>
+                                    & cùng các dịch vụ tốt nhất
                                 </div>
                                 <div class="tp-caption lfb carousel-caption-inner" data-x="105" data-y="313" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
-                                    style="background: #f7c411; padding: 10px; cursor: pointer;">
-                                    <a href="#" class="" style="background: #f7c411; border-radius: 0; color: #313a45; display: inline-block;  font-size: 18px; padding: 8px 34px; text-transform: uppercase; border: 1px solid #9e811a;">Explore IT</a>
+                                    style="background: #f7c411; padding: 10px; cursor: pointer; margin-top: 40px;  margin-left: 80px;">
+                                    <a href="#" class="" style="background: #f7c411; border-radius: 0; color: #313a45; display: inline-block; font-size: 18px; padding: 8px 34px; text-transform: uppercase; font-weight: bold; border: 1px solid #9e811a;">Xem thêm</a>
                                 </div>
                             </li>
 
                             <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
                                 <img src="{%static 'hoteltp/img/rev-slider/slider-one.jpg'%}" alt="slide" >
                                 <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
-                                    style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
-                                    Book Your Summer Holidays
+                                    style="font-family: 'Playfair Display', serif; font-size: 60px;color: #131e2a; margin-bottom: 10px; font-style: italic; text-transform: uppercase; line-height: 40px;">
+                                    Trải nghiệm văn hoá
                                 </div>
                                 <div class="tp-caption large_black sfr" data-x="105" data-y="255" data-speed="1500" data-start="1400" data-easing="easeInOutBack"
-                                    style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
-                                    With HOTEL BOOKING Template
+                                    style="font-family: 'Playfair Display', serif; font-size: 35px;color: #131e2a; margin-bottom: 23px; margin-top: 10px; padding-left: 80px; line-height: 40px;">
+                                    Khám phá không giới hạn những nét đẹp <br>
+                                    văn hoá địa phương đa dạng của Việt Nam <br>
+                                    ngay tại QTN Hotel
                                 </div>
                                 <div class="tp-caption lfb carousel-caption-inner" data-x="105" data-y="313" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
-                                    style="background: #f7c411; padding: 10px; cursor: pointer;">
-                                    <a href="#" class="" style="background: #f7c411; border-radius: 0; color: #313a45; display: inline-block;  font-size: 18px; padding: 8px 34px; text-transform: uppercase; border: 1px solid #9e811a;">Explore IT</a>
+                                    style="background: #f7c411; padding: 10px; cursor: pointer; margin-top: 80px;  margin-left: 80px;">
+                                    <a href="#" class="" style="background: #f7c411; border-radius: 0; color: #313a45; display: inline-block; font-size: 18px; padding: 8px 34px; text-transform: uppercase; font-weight: bold; border: 1px solid #9e811a;">Xem thêm</a>
                                 </div>
                             </li>							                           
                         </ul>
@@ -71,7 +74,7 @@
                             <h3>Welcome To Hotel</h3>
                         </div>
                         <div class="section_description">
-                            <p> Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor. </p>
+                            <p style="font-family: 'Fira Sans', sans-serif;"> “Đích đến không phải là nơi bạn kết thúc chuyến đi mà đó là những rủi ro và những kỷ niệm bạn đã tạo ra trên suốt chặng đường.” – Penelope Riley</p>
                         </div>
                         <div class="row">
                             <div class="other_room">
@@ -88,28 +91,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>Deluxe Room</h6>
+		                                                                <h6>Standard Room</h6>
 		                                                                <p>$130/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Elegant Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Standard Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Loại phòng đơn giản với những trang bị tối thiểu, diện tích nhỏ-gọn, ở tầng thấp, có view không đẹp. 
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                            	Có mức giá thấp nhất trong khách sạn.
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
 		                                                                    <p>$130/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -125,28 +128,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>Single Room</h6>
-		                                                                <p>$140/ <span>night</span></p>
+		                                                                <h6>Superior Room</h6>
+		                                                                <p>$150/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Single Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Superior Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Loại phòng có chất lượng cao hơn Standard Room, với diện tích khoảng 40 – 45 m².
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                View đẹp, nhiều trang thiết bị tiện nghi.
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
-		                                                                    <p>$140/ <span>night</span></p>
+		                                                                    <p>$150/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -162,28 +165,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>DoubleRoom</h6>
+		                                                                <h6>Deluxe Room</h6>
 		                                                                <p>$200/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Double Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Deluxe Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                               	Loại phòng chất lượng cao ở trên tầng cao, tầm nhìn đẹp và các trang thiết bị cao cấp.
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                               	Diện tích khoảng 45 – 65 m², kê thêm 1 giường đơn.
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
 		                                                                    <p>$200/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -199,28 +202,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>ChildRoom</h6>
-		                                                                <p>$100/ <span>night</span></p>
+		                                                                <h6>Suite Room</h6>
+		                                                                <p>$400/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Child Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Suite Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Loại phòng cao cấp, ở trên cao, trang bị những thiết bị cao cấp và các dịch vụ kèm theo. Có phòng khách và phòng ngủ riêng biệt.
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Có ban công view siêu đẹp.
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
-		                                                                    <p>$100/ <span>night</span></p>
+		                                                                    <p>$400/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -236,28 +239,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>CoupleRoom</h6>
-		                                                                <p>$160/ <span>night</span></p>
+		                                                                <h6>Executive Suite Room</h6>
+		                                                                <p>$450/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Couple Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Executive Suite Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Một loại phòng Suite với phòng khách kết nối với một hoặc nhiều phòng ngủ và không gian rộng.
 		                                                            </p>
 		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                                Diện tích lớn hơn Suite Room khoảng 70 – 100 m².
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
-		                                                                    <p>$160/ <span>night</span></p>
+		                                                                    <p>$450/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -273,28 +276,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>ElegantRoom</h6>
-		                                                                <p>$250/ <span>night</span></p>
+		                                                                <h6>President Suite Room</h6>
+		                                                                <p>$550/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Elegant Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>President Suite Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Một loại phòng Suite còn được gọi là phòng tổng thống. Căn phòng đắt nhất và lớn nhất trong khách sạn.
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Dịch vụ riêng (Quản gia).
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
-		                                                                    <p>$250/ <span>night</span></p>
+		                                                                    <p>$550/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -310,28 +313,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>PersonalRoom</h6>
+		                                                                <h6>Adjacent Rooms </h6>
 		                                                                <p>$170/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Personal Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Adjacent Rooms</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Loại phong liền kề, có tưởng nhưng không có cửa kết nối, có thể ở bên kia sảnh.
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Mỗi phòng có diện tích khoảng từ 30 - 45 m².
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
 		                                                                    <p>$170/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -347,28 +350,28 @@
 		                                                    </div>
 		                                                    <div class="room_title border-bottom-whitesmoke clearfix">
 		                                                            <div class="left_room_title floatleft">
-		                                                                <h6>Deluxe Room</h6>
+		                                                                <h6>Hollywood Twin Room</h6>
 		                                                                <p>$190/ <span>night</span></p>
 		                                                            </div>
 		                                                            <div class="left_room_title floatright">
-		                                                                <a href="#" class="btn">Book</a>
+		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                            </div>
 		                                                        </div>
 		                                                    <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
 		                                                        <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
-		                                                            <h5>Deluxe Room</h5>
-		                                                            <p>
-		                                                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia.
+		                                                            <h5>Hollywood Twin Room</h5>
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Loại phòng giới hạn, thiết kế như một Suite Room nhỏ gọn dành cho 2 người nhưng giá chỉ xấp xỉ với Deluxe Room.
 		                                                            </p>
-		                                                            <p>
-		                                                                Phasellus accumsan urna vitae molestie interdum.
+		                                                            <p style="font-family: 'Fira Sans', sans-serif;">
+		                                                                Diện tích từ 32-45 m².
 		                                                            </p>
-		                                                            <div class="single_room_cost clearfix">
+		                                                            <div class="test single_room_cost clearfix">
 		                                                                <div class="floatleft">
 		                                                                    <p>$190/ <span>night</span></p>
 		                                                                </div>
 		                                                                <div class="floatright">
-		                                                                    <a href="#" class="btn">Book</a>
+		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
 		                                                                </div>
 		                                                            </div>
 		                                                        </div>
@@ -408,7 +411,7 @@
                                     <a href="#sports-club" aria-controls="sports-club" role="tab" data-toggle="tab"><img src="{%static 'hoteltp/img/home-facilities-icon-seven.png'%}" alt="sports-club"><span>sports-club</span></a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#pick-up" aria-controls="pick-up" role="tab" data-toggle="tab"><img src="{%static 'hoteltp/img/home-facilities-icon-eight.png'%}" alt="pick-up"><span>pick-up</span></a>
+                                    <a href="#pick-up" aria-controls="pick-up" role="tab" data-toggle="tab"><img src="{%static 'hoteltp/img/home-facilities-icon-four.png'%}" alt="pick-up"><span>massage</span></a>
                                 </li>
                                 <li role="presentation">
                                     <a href="#bar" aria-controls="bar" role="tab" data-toggle="tab"><img src="{%static 'hoteltp/img/home-facilities-icon-nine.png'%}" alt="bar"><span>bar</span></a>
@@ -420,7 +423,7 @@
 
                           
                             <!-- Tab panes -->
-                            <div class="tab-content">
+                            <div class="tab-content" style="padding: 50px">
                                 <div role="tabpanel" class="tab-pane active" id="restaurant">
                                     <div class="single-tab-content">
                                         <div class="row">
@@ -431,17 +434,17 @@
                                             </div>
                                             <div class="co-lg-7 col-md-7 col-sm-6">
                                                 <div class="single-tab-details">
-                                                    <h6>The world class</h6>
-                                                    <h3>Restaurant & Banquets</h3>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Dịch vụ khách sạn</p></h6>
+                                                    <h3>RESTAURANT & BUFFETS</h3>
                                                     <p>
-                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                        QTN Hotel có một hệ thống nhà hàng với các món ăn đa dạng, mang bản sắc của nhiều vùng miền và các đất nước khác nhau, được tạo ra bởi các đầu bếp có tay nghề cao. Mang đến cho du khách một thế giới ẩm thực vô vàn màu sắc khác nhau. 
                                                     </p>
                                                     <p>
-                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                        Các buổi buffets được tổ chức vào sáng thứ 7 và chủ nhật hàng tuần với hơn 200 món ăn, từ các món mặn tới các món chay và các món tráng miệng cũng như các loại thức uống để du khách có thể tận hưởng tốt nhất. 
                                                     </p>
                                                     <div class="our_services">
-                                                        <a href="#" class="margin-right-33">Service Hours; 19.00-22:00 </a>
-                                                        <a href="#">service charge : $15</a>
+                                                        <a href="#" class="margin-right-33" style="font-family: 'Fira Sans', sans-serif;">RESTAURANT: 8:00-22:00 </a>
+                                                        <a href="#" style="font-family: 'Fira Sans', sans-serif;">Buffet: 8:00-12:00 (Thứ 7 & Chủ Nhật)</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -453,21 +456,21 @@
                                         <div class="row">
                                             <div class="co-lg-5 col-md-5">
                                                 <div class="single-tab-image">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/hotel-facility-three.jpg'%}" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/sport.jpg'%}" alt="" style="padding-top: 20px;"></a>
                                                 </div>
                                             </div>
                                             <div class="co-lg-7 col-md-7">
                                                 <div class="single-tab-details">
-                                                    <h6>The world class</h6>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Dịch vụ khách sạn</p></h6>
                                                     <h3>Sports Club</h3>
                                                     <p>
-                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                       	Du khách có thể tham gia vào các Sports Club ngay trong QTN Hotel với 7 bộ môn để bạn lựa chọn giúp cho cũng có thể rèn luyện sức khoẻ và giao lưu với bạn bè ngay trong chuyến đi của mình.
                                                     </p>
                                                     <p>
-                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                        Để giúp du khách trải nghiệm tốt nhất tại các Sports Club, QTN Hotel đã xây dựng 1 nhà thi đấu đa năng, 1 công viên ngay phía giữa khách sạn và 3 hồ bơi với 1 hồ trẻ em và 2 hồ tầm trung cùng với đội ngủ thành viên Club vui vẻ hoà đồng và thân thiện. 
                                                     </p>
                                                     <div class="our_services">
-                                                        <a href="#" class="margin-right-33">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="margin-right-33">Service Hours: 5:00-22:00 </a>
                                                         <a href="#">service charge : $15</a>
                                                     </div>
                                                 </div>
@@ -480,21 +483,21 @@
                                         <div class="row">
                                             <div class="co-lg-5 col-md-5">
                                                 <div class="single-tab-image">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/hotel-facility-one.jpg'%}" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/massage1.jpg'%}" alt="" style="padding-top: 30px;"></a>
                                                 </div>
                                             </div>
                                             <div class="co-lg-7 col-md-7">
                                                 <div class="single-tab-details">
-                                                    <h6>The world class</h6>
-                                                    <h3>Pick Up</h3>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Dịch vụ khách sạn</p></h6>
+                                                    <h3>Massage</h3>
                                                     <p>
-                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                        Tận hưởng dịch vụ massage toàn thân và massage chân với bằng các thủ thuật như xoa bóp, bấm huyệt, vỗ, miết, day vào các huyệt đạo và cơ bắp trên cơ thể. Giúp du khách có thể xua tan mệt mỏi, các cơn đau, nhức mỏi trong chuyến đi cũng như ổn định tinh thần.
                                                     </p>
                                                     <p>
-                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                        Các chuyên viên massage có bằng cấp từ các trung tâm số một trên cả nước với thái độ tận tình vui vẻ sẽ giúp du khách tận hưởng dịch vụ massage của QTN Hotel một cách trọn vẹn và thoải mái nhất.  
                                                     </p>
                                                     <div class="our_services">
-                                                        <a href="#" class="margin-right-33">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="margin-right-33">Service Hours: 9:00-17:00 </a>
                                                         <a href="#">service charge : $15</a>
                                                     </div>
                                                 </div>
@@ -507,22 +510,22 @@
                                         <div class="row">
                                             <div class="co-lg-5 col-md-5">
                                                 <div class="single-tab-image">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/hotel-facility-three.jpg'%}" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/bar.jpg'%}" alt="" style="padding-top: 20px;"></a>
                                                 </div>
                                             </div>
                                             <div class="co-lg-7 col-md-7">
                                                 <div class="single-tab-details">
-                                                    <h6>The world class</h6>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Dịch vụ khách sạn</p></h6>
                                                     <h3>Bar</h3>
                                                     <p>
-                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                        Quán Bar toạ lạc trên tầng cao nhất của khách sạn, với phong cách cổ điển Châu Âu cùng những bản nhạc jazz đưa du khách tới 1 không gian vừa có thể ngắm phong cảnh ở trên cao vừa tận hưởng một buổi tối vô cùng tuyệt vời.    
                                                     </p>
                                                     <p>
-                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                        Các Bartender với kỹ thuật pha chế cao cấp sẽ gửi tới du khách những ly cocktail, các loại rượu thượng hàng và các đồ uống tuyệt nhất cho một buổi tối nhiều cảm xúc tại QNT Hotel Bar.
                                                     </p>
                                                     <div class="our_services">
-                                                        <a href="#" class="margin-right-33">Service Hours; 19.00-22:00 </a>
-                                                        <a href="#">service charge : $15</a>
+                                                        <a href="#" class="margin-right-33">Service Hours: 19.00-23:00 </a>
+                                                       	 
                                                     </div>
                                                 </div>
                                             </div>
@@ -534,21 +537,21 @@
                                         <div class="row">
                                             <div class="co-lg-5 col-md-5">
                                                 <div class="single-tab-image">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/hotel-facility-one.jpg'%}" alt=""></a>
+                                                    <a href="#"><img src="{%static 'hoteltp/img/gym.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="co-lg-7 col-md-7">
                                                 <div class="single-tab-details">
-                                                    <h6>The world class</h6>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Dịch vụ khách sạn</p></h6>
                                                     <h3>Gym</h3>
                                                     <p>
-                                                        Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.
+                                                        QTN Hotel cũng trang bị 2 phòng gym cao cấp với đầy đủ các trang thiết bị máy móc cần thiết để du khách để có thể trải nghiệm tất cả các loại hình tập luyện đáp ứng nhu cầu luyện tập của con người.
                                                     </p>
                                                     <p>
-                                                        Cras ac justo et augue suscipit euismod vel eget lectus. Proin vehicula nunc arcu, pulvinar accumsan nulla porta vel. Vivamus malesuada vitae sem ac pellentesque.
+                                                        Đội ngũ huấn luyện viên phòng gym có trình độ chuyên môn cao, trẻ trung, năng động luôn giúp đỡ các vận động viên một cách tận tình và tốt nhất.
                                                     </p>
                                                     <div class="our_services">
-                                                        <a href="#" class="margin-right-33">Service Hours; 19.00-22:00 </a>
+                                                        <a href="#" class="margin-right-33">Service Hours: 5.00-19:00 </a>
                                                         <a href="#">service charge : $15</a>
                                                     </div>
                                                 </div>
@@ -576,43 +579,43 @@
                         <div class="section_content">
                             <div class="showcase_slider">
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-one.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-one.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-two.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-two.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-three.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-three.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-four.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-four.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-five.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-five.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-six.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-six.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-seven.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-seven.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-one.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-one.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-two.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-two.jpg'%}" alt="img">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#"><img src="{%static 'hoteltp/img/showcase-slider-three.jpg'%}" alt="img">
+                                    <a href="{% url 'hotel:gallery' %}"><img src="{%static 'hoteltp/img/showcase-slider-three.jpg'%}" alt="img">
                                     </a>
                                 </div>
                             </div>
@@ -628,54 +631,54 @@
                 <div class="about_us clearfix">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding-left-0">
                         <div class="news">
-                            <div class="section_title margin-bottom-50">
+                            <div class="section_title margin-bottom-50" >
                                 <h5>News</h5>
                             </div>
-                            <div class="section_description">
+                            <div class="section_description" style="padding-right: 0px">
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" style="padding-right: 10px; padding-left: 10px;">
                                         <div class="single_content clearfix border-bottom-whitesmoke">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 padding-left-0">
                                                 <div class="post_media">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/news-one.jpg'%}" alt=""></a>
+                                                    <a href="{% url 'hotel:blog' %}"><img src="{%static 'hoteltp/img/news-one.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 padding-left-0">
-                                                <div class="post_title clearfix">
-                                                    <h6>Quisque at felis port titordga</h6>
+                                                <div class="post_title clearfix">    
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Giáng sinh an lành, Noel vui vẻ!!! Chuỗi sự kiện Noel</p></h6>
                                                 </div>
                                                 <div class="post_content  margin-bottom-35">
-                                                    <p>14 May 2014</p>
+                                                    <p>23 December 2014</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="single_content clearfix margin-top-35 border-bottom-whitesmoke">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 padding-left-0">
                                                 <div class="post_media">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/news-two.jpg'%}" alt=""></a>
+                                                    <a href="{% url 'hotel:blog' %}"><img src="{%static 'hoteltp/img/news-two.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 padding-left-0">
                                                 <div class="post_title clearfix">
-                                                    <h6>Donec scelerisque vulputate</h6>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Ấm no ngày Tết, mang bửa cơm ngon tới người nghèo dịp Tết 2020 Canh Tý</p></h6>
                                                 </div>
                                                 <div class="post_content margin-bottom-35">
-                                                    <p>15 May 2014</p>
+                                                    <p>26 December 2019</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="single_content clearfix margin-bottom-35 margin-top-35">
                                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-4 padding-left-0">
                                                 <div class="post_media">
-                                                    <a href="#"><img src="{%static 'hoteltp/img/news-three.jpg'%}" alt=""></a>
+                                                    <a href="{% url 'hotel:blog' %}"><img src="{%static 'hoteltp/img/news-three.jpg'%}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 padding-left-0">
                                                 <div class="post_title clearfix">
-                                                    <h6>Curabitur varius quam lorem</h6>
+                                                    <h6><p style="font-family: 'Fira Sans', sans-serif;">Giảm giá các dịch vụ và đại tiệc hoá trang mừng Xuân 2020</p></h6>
                                                 </div>
                                                 <div class="post_content">
-                                                    <p>17 May 2014</p>
+                                                    <p>26 December 2019</p>
                                                 </div>
                                             </div>
                                         </div>                                  
@@ -724,7 +727,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="customer_says">
                             <div class="section_title margin-bottom-50">
-                                <h5>Customer Says</h5>
+                                <h5>Customer reviews</h5>
                             </div>
                             <div class="section_description">
                                 <div id="customer_says_slider" class="carousel slide" data-ride="carousel" data-pause="none">
@@ -733,20 +736,20 @@
                                         <div class="item active">
                                             <div class="single_says">
                                                 <div class="customer_comment">
-                                                    <p>
-                                                        Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan urna vitae molestie interdum.
+                                                    <p style="font-family: 'Fira Sans', sans-serif;">
+                                                        QTN Hotel có tất cả những thứ mà chúng tôi cần đối với một nơi ở trong chuyến du lịch của mình, thức ăn, dịch vụ, nhân viên tất cả đều tuyệt.
                                                     </p>
-                                                    <p>
-                                                        Nam sed placerat libero, non eleifend dolor.
+                                                    <p style="font-family: 'Fira Sans', sans-serif;">
+                                                        Lần sau tôi và chồng nhất định sẽ lại tới.
                                                     </p>
                                                 </div>
                                                 <div class="customer_detail clearfix">
                                                     <div class="customer_pic alignleft-20">
-                                                        <a href="#"><img src="{%static 'hoteltp/img/customer-says-one.png'%}" alt=""></a>
+                                                        <a href="#"><img src="{%static 'hoteltp/img/customer.png'%}" alt="" heigth = "50px" width = "50px"></a>
                                                     </div>
                                                     <div class="customer_identity floatleft">
-                                                        <h6>John Doe</h6>
-                                                        <p>www.john.com</p>
+                                                        <h6>Ngô Thị Trang</h6>
+                                                        <p>ntr@gmail.com</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -754,20 +757,41 @@
                                         <div class="item">
                                             <div class="single_says">
                                                 <div class="customer_comment">
-                                                    <p>
-                                                        Semper ac dolor vitae msan. Cras interdum hendreritnia Phasellus accumsan urna vitae molestie interdum.
+                                                    <p style="font-family: 'Fira Sans', sans-serif;">
+                                                       Our trip to Hue last week was fantastic. Part of it is thanks to the QTN Hotel Hue.
                                                     </p>
-                                                    <p>
-                                                        Nam sed placerat libero, non eleifend dolor.
+                                                    <p style="font-family: 'Fira Sans', sans-serif;">
+														The next time I have the opportunity to travel to Hue, I will also choose this place as my resting place.
                                                     </p>
                                                 </div>
                                                 <div class="customer_detail clearfix">
                                                     <div class="customer_pic alignleft-20">
-                                                        <a href="#"><img src="{%static 'hoteltp/img/customer-says-one.png'%}" alt=""></a>
+                                                        <a href="#"><img src="{%static 'hoteltp/img/customer.png'%}" alt="" heigth = "50px" width = "50px"></a>
                                                     </div>
                                                     <div class="customer_identity floatleft">
-                                                        <h6>John Doe</h6>
-                                                        <p>www.john.com</p>
+                                                        <h6>John Henry</h6>
+                                                        <p>mrjohn@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="single_says">
+                                                <div class="customer_comment">
+                                                    <p style="font-family: 'Fira Sans', sans-serif;">
+                                                       	Thật là một nơi dừng chân tuyệt vời. Giường rất êm và phòng rất thoải mái và thoáng mát.
+                                                    </p>
+                                                    <p style="font-family: 'Fira Sans', sans-serif;">
+														Lần sau khi tôi và gia đình hay bạn bè tới Huế để du lịch, tôi sẽ vẫn chọn nơi này để có những trải nhiệm thú vị.
+                                                    </p>
+                                                </div>
+                                                <div class="customer_detail clearfix">
+                                                    <div class="customer_pic alignleft-20">
+                                                        <a href="#"><img src="{%static 'hoteltp/img/customer.png'%}" alt="" heigth = "50px" width = "50px"></a>
+                                                    </div>
+                                                    <div class="customer_identity floatleft">
+                                                        <h6>Lê Hoàng Long</h6>
+                                                        <p>lhlong@gmail.com</p>
                                                     </div>
                                                 </div>
                                             </div>
