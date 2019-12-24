@@ -1,10 +1,12 @@
 from django.shortcuts import render,redirect
+from chitietbooking.models import ChiTietBooking
 from django.views import View
-from .forms import SignUpForm
+from .forms import SignUpForm,formCTBK
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import authenticate, login,get_user_model, logout
 from django.contrib.auth.forms import UserCreationForm
 # Create your views here.
+
 
 class indexView(LoginRequiredMixin, View):
     login_url="/login/"
@@ -20,12 +22,14 @@ class asView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):
         return render(request, 'hoteltp/about-us.html')
-    
+
 class bookingView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):
-        return render(request, 'hoteltp/booking.html')
-
+        form=ChiTietBooking.objects.all()
+        context={"f":form}
+        return render(request, 'hoteltp/booking.html',context)
+    
 class failedView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):

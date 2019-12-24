@@ -1,5 +1,6 @@
 from django import forms
 from phong.models import Phong
+from chitietbooking.models import ChiTietBooking
 from khachhang.models import MyUser
 from django.forms import ModelForm
 from django.contrib.auth.forms import UserCreationForm
@@ -21,3 +22,12 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = MyUser
         fields = ('username', 'password1','password2','email','sdt')
+class formCTBK(ModelForm):
+    class Meta:
+        model=ChiTietBooking
+        fields=['mabooking','tendn','sophong']
+        labels= {'sophong':'So Phong'}
+        
+        
+        
+        
