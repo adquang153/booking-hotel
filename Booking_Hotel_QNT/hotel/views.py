@@ -47,7 +47,8 @@ class loginView(View):
             return render(request, 'hoteltp/login.html')
         else:
             login(request, my_user)
-            return render(request, 'hoteltp/index.html')
+#             return render(request, 'hoteltp/index.html')
+            return redirect('hotel:index')
 class resView(View):
     def get(self,request):
         form = SignUpForm()
@@ -57,7 +58,12 @@ class resView(View):
         dki = SignUpForm(request.POST)
         if(dki.is_valid()):
             dki.save()
-            return render(request,'hoteltp/index.html')
+            tk = request.POST.get('username')
+            mk = request.POST.get('password1')
+            my_user = authenticate(username=tk,password=mk)
+            login(request, my_user)
+#             return render(request,'hoteltp/index.html')
+            return redirect('hotel:index')
         else:
             return render(request,'hoteltp/res.html')
 class logoutView(View):
