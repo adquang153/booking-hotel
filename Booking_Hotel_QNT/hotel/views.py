@@ -38,20 +38,22 @@ class bookingView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):
         form=ChiTietBooking.objects.all()
-        context={"f":form}
+        context={"h":form}
         return render(request, 'hoteltp/booking.html',context)
     def post(self,request):
         sp = request.POST.get("sp")
         tentk = request.POST.get("tentk")
+        dt = request.POST.get("dt")
+        formc = ChiTietBooking.objects.all()
         a = MyUser.objects.get(username=tentk)
         f = Phong.objects.get(sophong=sp)
         f.active = True
         f.save()
-        f3 = ChiTietBooking(tendn=a,sophong=f)
+        f3 = ChiTietBooking(tendn=a,sophong=f,thanhtien=f.gia,ngaynhanphong=dt)
         f3.save()
-        form = Phong.objects.all()
-        context = {'f':form}
-        return render(request,'hoteltp/index.html',context)
+        formp = Phong.objects.all()
+        context = {'f':formp,'h':formc}
+        return render(request,'hoteltp/booking.html',context)
         
 class failedView(LoginRequiredMixin,View):
     login_url="/login/"

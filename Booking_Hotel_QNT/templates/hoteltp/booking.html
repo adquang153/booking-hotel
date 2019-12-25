@@ -3,7 +3,7 @@
 
 {% block body %}
     <body id="booking_page">
-    {{f2.username}}
+    {{dt}}
 	{% include 'hoteltp/navbar.html' %}
         <!-- start breadcrumb -->
         <section class="breadcrumb_main_area margin-bottom-80" style="background: url({% static 'hoteltp/img/gallery-breadcrumb.jpg' %}) no-repeat center center / cover #000000;">
@@ -49,8 +49,10 @@
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
                                                     </div>
                                                 </div>
-                                                <span>Room number: {{f.sophong}}</span>
-                                                
+                                                <div class="col-12">
+                                                <p style="text-align: left;color:black;"><big>Room number: {{f.sophong}}</big></p>
+                                                <p style="text-align: left;color:black;"> Day check-in:&emsp;&emsp;</p>
+                                                </div>
                                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 no-padding-left">
                                                     <ul class="single_facilities_name clearul">
                                                         <li>
@@ -99,12 +101,13 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-lg-12">
-                                                	<form method="post" action="{% url 'hotel:booking' %}">
+                                                <div class="col-lg-12" style="margin-top:30px;">
+                                                	<form method="post" action="{% url 'hotel:booking' %}" style="text-align: left">
                                                 	{% csrf_token %}
+                                                	<input class="date-picker" id="datepicker" type="date" name="dt" placeholder="Picker day" style="background: transparent;border:none;border-bottom: 1px solid #312929"><i class="fa fa-calendar" style="color:black"></i>
                                                 		<input type="text" hidden="true" value = "{{user.username}}" name="tentk">
                                                 		<input type="text" hidden="true" value = "{{f.sophong}}" name="sp">
-                                                		<button type="submit" class="btn" style="margin-left: auto">Book Room</button>
+                                                		&emsp;&emsp;&emsp;<button type="submit" class="btn" style="margin-left: auto">Book Room</button>
                                                 	</form>
                                                 </div>
                                             </div>
@@ -113,4 +116,44 @@
         	</div>           
         </section>
         <!-- end breadcrunb -->
+        <section class="container" style="margin-bottom:70px;">
+        	<div class="row">
+        		<div class="col-12">
+        			<h3 style="text-align: center;margin-bottom:50px;">HISTORY BOOKING</h3>
+        		</div>
+       		</div>
+       			<div class="row" style="margin:auto;margin-bottom:20px;">
+       				<div class="col-lg-3" style="text-align: center;">
+       					<h5>Booking Code</h5>
+       				</div>
+       				
+       				<div class="col-lg-3" style="text-align: center;">
+       					<h5>Room Number</h5>
+       				</div>
+       				<div class="col-lg-3">
+       					<h5>Days Check-in</h5>
+       				</div>
+       				<div class="col-lg-3" style="text-align: center;">
+       					<h5>Cost</h5>
+       				</div>
+       			</div>
+   				{% for i in h %}
+   				{% if i.tendn == user %}
+    				<div class="row" style="margin:auto;margin-top:25px;border-bottom: 1px dotted #6b3c3c">
+	   					<div class="col-lg-3" style="text-align: center;">
+	   						<a>{{i.mabooking}}</a>
+	   					</div>
+	      				<div class="col-lg-3" style="text-align: center;">
+	       					<a>{{i.sophong}}</a>
+	      				</div>
+	    				<div class="col-lg-3">
+	    					<a>{{i.ngaynhanphong}}</a>
+	    				</div>
+	    				<div class="col-lg-3" style="text-align: center;">
+	    					<a>{{i.thanhtien}}<sup>$</sup></a>
+	    				</div>
+    				</div>
+   				{%endif%}
+   				{%endfor%}
+        </section>
 {% endblock %}
