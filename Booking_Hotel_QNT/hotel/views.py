@@ -6,9 +6,10 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import authenticate, login,get_user_model, logout
 from django.contrib.auth.forms import UserCreationForm
 from phong.models import Phong
+from khachhang.models import MyUser
 # Create your views here.
 
-
+tk = ""
 class indexView(LoginRequiredMixin, View):
     login_url="/login/"
     def get(self,request):
@@ -16,7 +17,14 @@ class indexView(LoginRequiredMixin, View):
         context = {'f':form}
         return render(request, 'hoteltp/index.html',context)
     def post(self,request):
-        pass
+        sp = request.POST.get('sp')
+        f = Phong.objects.get(sophong=sp)
+#         f.active = True
+#         f.save()
+#         form = Phong.objects.all()
+#         context = {'f':form}
+        context = {'f' : f}
+        return render(request, 'hoteltp/booking.html',context)
 class galleryView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):
@@ -33,7 +41,22 @@ class bookingView(LoginRequiredMixin,View):
         form=ChiTietBooking.objects.all()
         context={"f":form}
         return render(request, 'hoteltp/booking.html',context)
-    
+    def post(self,request):
+        sp = request.POST.get("sp")
+        f = Phong.objects.get(sophong=sp)
+        f.active = True
+        if tk is None:
+            pass
+        else:
+            if(user.is_authenticate()):
+                f2 = ChiTietBooking(tendn=MyUser.objects.get(username = user,password = password),sophong = sp)
+        if f2.is_valid():
+            f.save()
+            f2.save()
+        form = Phong.objects.all()
+        context = {'f':form}
+        return render(request,'hoteltp/index.html',context)
+        
 class failedView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):

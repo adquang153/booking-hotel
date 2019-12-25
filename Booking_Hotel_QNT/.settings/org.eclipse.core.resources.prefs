@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//hotel/views.py=UTF-8
 encoding//phong/models.py=UTF-8
+encoding//templates/hoteltp/booking.html=UTF-8
 encoding//templates/hoteltp/index.html=UTF-8
 encoding//templates/hoteltp/login.html=UTF-8
 encoding//templates/hoteltp/navbar.html=UTF-8

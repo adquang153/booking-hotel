@@ -399,7 +399,7 @@ body#home_one .single_room_wrapper .uk-overlay:hover .single_wrapper_details, bo
 	-o-transition: 0.7s;
 	transition: 0.7s;
 }
-body#home_one .single_room_wrapper .uk-overlay:hover .left_room_title a.btn, body#accomodation_page .single_room_wrapper .uk-overlay:hover .left_room_title a.btn{
+body#home_one .single_room_wrapper .uk-overlay:hover .left_room_title a.btn,body#home_one .single_room_wrapper .uk-overlay:hover .left_room_title button.btn, body#accomodation_page .single_room_wrapper .uk-overlay:hover .left_room_title a.btn,body#accomodation_page .single_room_wrapper .uk-overlay:hover .left_room_title button.btn{
 	background: #63c2ea none repeat scroll 0 0;
 	color: #fff;
 }
@@ -1170,7 +1170,7 @@ body#room_detail_page .hotel_booking_area {
 	padding: 5px 5px 69px;
 	position: relative;
 }
-body#room_detail_page .hotel_booking a.btn {
+body#room_detail_page .hotel_booking a.btn,body#room_detail_page .hotel_booking button.btn {
 	bottom: calc(0px - 88px);
 	left: calc(50% - 43px);
 	position: absolute;

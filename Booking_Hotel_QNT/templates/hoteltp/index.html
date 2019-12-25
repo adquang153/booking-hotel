@@ -98,9 +98,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A01" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+			                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            {% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -125,9 +129,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A01" %}
 			                                                            {% if i.active == False%}
+			                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
 		                                                                <div class="floatright">
-		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
+		                                                                    <button type="submit" class="btn">Book</button>
 		                                                                </div>
+		                                                                </form>
 		                                                                {% else %}
 			                                                            <div class="floatright">
 		                                                                    <a href="#" class="btn">Hết phòng</a>
@@ -155,9 +163,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A02" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -184,9 +196,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A02" %}
 			                                                            {% if i.active == False%}
-		                                                            	<div class="floatright">
-		                                                                    <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                                </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -215,9 +231,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A03" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            {% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -243,9 +263,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A03" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -274,9 +298,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A04" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -302,9 +330,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A04" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -333,9 +365,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A05" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -361,9 +397,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A05" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -392,9 +432,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A06" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -420,9 +464,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A06" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                               	             	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -451,9 +499,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A07" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -479,9 +531,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A07" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -510,9 +566,13 @@
 		                                                            {% for i in f %}
 			                                                            {% if i.sophong == "A08" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="left_room_title floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            	<form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="left_room_title floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="left_room_title floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
@@ -538,9 +598,13 @@
 		                                                                {% for i in f %}
 			                                                            {% if i.sophong == "A08" %}
 			                                                            {% if i.active == False%}
-		                                                            <div class="floatright">
-		                                                                <a href="{% url 'hotel:booking' %}" class="btn">Book</a>
-		                                                            </div>
+		                                                            <form method="post">
+			                                                            {% csrf_token %}
+			                                                            <input type="text" hidden="true" value="{{i.sophong}}" name="sp">
+			                                                            <div class="floatright">
+			                                                                <button type="submit" class="btn">Book</button>
+			                                                            </div>
+			                                                            </form>
 		                                                            	{% else %}
 		                                                            <div class="floatright">
 		                                                                <a href="#" class="btn">Hết phòng</a>
