@@ -5,14 +5,18 @@ from .forms import SignUpForm,formCTBK
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import authenticate, login,get_user_model, logout
 from django.contrib.auth.forms import UserCreationForm
+from phong.models import Phong
 # Create your views here.
 
 
 class indexView(LoginRequiredMixin, View):
     login_url="/login/"
     def get(self,request):
-        return render(request, 'hoteltp/index.html')
-    
+        form = Phong.objects.all()
+        context = {'f':form}
+        return render(request, 'hoteltp/index.html',context)
+    def post(self,request):
+        pass
 class galleryView(LoginRequiredMixin,View):
     login_url="/login/"
     def get(self,request):
