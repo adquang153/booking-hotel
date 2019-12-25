@@ -73,7 +73,8 @@ class loginView(View):
         mk = request.POST.get('pass')
         my_user = authenticate(username=tk,password=mk)
         if(my_user is None):
-            return render(request, 'hoteltp/login.html')
+            el = "Tài khoản hoặc mật khẩu không đúng"
+            return render(request, 'hoteltp/login.html',{'el':el})
         else:
             login(request, my_user)
 #             return render(request, 'hoteltp/index.html')
@@ -91,10 +92,14 @@ class resView(View):
             mk = request.POST.get('password1')
             my_user = authenticate(username=tk,password=mk)
             login(request, my_user)
+            
 #             return render(request,'hoteltp/index.html')
             return redirect('hotel:index')
         else:
-            return render(request,'hoteltp/res.html')
+            form = SignUpForm()
+            kt = "Đăng kí thất bại!"
+            context = {'form': form,'kt':kt}
+            return render(request,'hoteltp/res.html',context)
 class logoutView(View):
     def get(self,request):
         logout(request)
