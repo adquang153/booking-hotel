@@ -4,3 +4,5 @@ from django.contrib.auth.models import AbstractUser
 class MyUser(AbstractUser):
     tendn = AbstractUser.username
     sdt=models.CharField(default='',max_length=11)
+    
+    

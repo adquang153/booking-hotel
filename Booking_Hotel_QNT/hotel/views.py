@@ -46,15 +46,16 @@ class bookingView(LoginRequiredMixin,View):
             sp = request.POST.get("sp")
             tentk = request.POST.get("tentk")
             dt = request.POST.get("dt")
-            formc = ChiTietBooking.objects.all()
             a = MyUser.objects.get(username=tentk)
             f = Phong.objects.get(sophong=sp)
             f.active = True
             f.save()
             f3 = ChiTietBooking(tendn=a,sophong=f,thanhtien=f.gia,ngaynhanphong=dt)
             f3.save()
+            formc = ChiTietBooking.objects.all()
             formp = Phong.objects.all()
-            context = {'f':formp,'h':formc}
+#             context = {'f':formp,'h':formc}
+            context = {'h':formc}
             return render(request,'hoteltp/booking.html',context)
         else:
             sp1=request.POST.get("sp1")
