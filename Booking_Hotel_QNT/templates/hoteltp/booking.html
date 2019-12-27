@@ -140,19 +140,28 @@
    				{% for i in h %}
    				{% if i.tendn == user %}
     				<div class="row" style="margin:auto;margin-top:25px;border-bottom: 1px dotted #6b3c3c">
-	   					<div class="col-lg-3" style="text-align: center;">
-	   						<a>{{i.mabooking}}</a>
-	   					</div>
-	      				<div class="col-lg-3" style="text-align: center;">
-	       					<a>{{i.sophong}}</a>
-	      				</div>
-	    				<div class="col-lg-3">
-	    					<a>{{i.ngaynhanphong}}</a>
-	    				</div>
-	    				<div class="col-lg-3" style="text-align: center;">
-	    					<a>{{i.thanhtien}}<sup>$</sup></a>
-	    				</div>
-    				</div>
+                        <div class="col-lg-3" style="text-align: center;">
+                            <a>{{i.mabooking}}</a>
+                        </div>
+                        <div class="col-lg-3" style="text-align: center;">
+                            <a>{{i.sophong}}</a>
+                        </div>
+                        <div class="col-lg-2">
+                            <a>{{i.ngaynhanphong}}</a>
+                        </div>
+                        <div class="col-lg-2" style="text-align: center;">
+                            <a>{{i.thanhtien}}<sup>$</sup></a>
+                        </div>
+                        <div class="col-lg-2" style="text-align: center;">
+                            <form method="post" action="{% url 'hotel:booking' %}" style="text-align: left">
+                            {% csrf_token %}
+                            <input type="text" hidden="true" value = "{{i.mabooking}}" name="mabk">
+                            <input type="text" hidden="true" value = "{{i.sophong}}" name="sp1">
+                            <a><button type="submit" class="btn" style="margin-left: auto; border-color: yellow ; background-color: red; color: white;" >Cancel Booking</button></a>
+                            
+                            </form>
+                        </div>
+                    </div>
    				{%endif%}
    				{%endfor%}
         </section>

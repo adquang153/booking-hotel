@@ -41,19 +41,32 @@ class bookingView(LoginRequiredMixin,View):
         context={"h":form}
         return render(request, 'hoteltp/booking.html',context)
     def post(self,request):
-        sp = request.POST.get("sp")
-        tentk = request.POST.get("tentk")
-        dt = request.POST.get("dt")
-        formc = ChiTietBooking.objects.all()
-        a = MyUser.objects.get(username=tentk)
-        f = Phong.objects.get(sophong=sp)
-        f.active = True
-        f.save()
-        f3 = ChiTietBooking(tendn=a,sophong=f,thanhtien=f.gia,ngaynhanphong=dt)
-        f3.save()
-        formp = Phong.objects.all()
-        context = {'f':formp,'h':formc}
-        return render(request,'hoteltp/booking.html',context)
+        mbk=request.POST.get("mabk")
+        if mbk is None:
+            sp = request.POST.get("sp")
+            tentk = request.POST.get("tentk")
+            dt = request.POST.get("dt")
+            formc = ChiTietBooking.objects.all()
+            a = MyUser.objects.get(username=tentk)
+            f = Phong.objects.get(sophong=sp)
+            f.active = True
+            f.save()
+            f3 = ChiTietBooking(tendn=a,sophong=f,thanhtien=f.gia,ngaynhanphong=dt)
+            f3.save()
+            formp = Phong.objects.all()
+            context = {'f':formp,'h':formc}
+            return render(request,'hoteltp/booking.html',context)
+        else:
+            sp1=request.POST.get("sp1")
+            f = Phong.objects.get(sophong=sp1)
+            formc = ChiTietBooking.objects.all()
+            f.active = False
+            f.save()
+            f3 = ChiTietBooking(mabooking=mbk)
+            f3.delete()
+            formp = Phong.objects.all()
+            context = {'f':formp,'h':formc}
+            return render(request,'hoteltp/booking.html',context)
         
 class failedView(LoginRequiredMixin,View):
     login_url="/login/"
